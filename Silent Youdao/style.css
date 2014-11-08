@@ -1,0 +1,19 @@
+.sp.dictvoice.voice-js.log-js {
+  visibility: hidden;
+}
+
+div#result_navigator.result_navigator {
+  visibility: hidden;
+}
+
+div#ads.ads {
+  visibility : hidden;
+}
+
+div#results-contents.results-content {
+  margin-left: 20px;
+}
+
+span.s-inpt-w {
+ width: 300px;
+}
