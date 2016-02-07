@@ -1,3 +1,4 @@
+@-moz-document domain("youdao.com") {
 .sp.dictvoice.voice-js.log-js {
   visibility: hidden;
 }
@@ -16,4 +17,5 @@ div#results-contents.results-content {
 
 span.s-inpt-w {
  width: 300px;
+}
 }
