@@ -1,9 +1,16 @@
 @-moz-document domain("reddit6.com") {
 div.desc{
-    max-width: 900px !important;
-    font-size: 16pt !important;
+    max-width: 800px !important;
+    font-size: 19pt !important;
     font-family: 'bookerly', 'Microsoft YaHei' !important;
-    line-height: 130%;
+    line-height: 150%;
+}
+
+div.md{
+    max-width: 800px !important;
+    font-size: 19pt !important;
+    font-family: 'bookerly', 'Microsoft YaHei' !important;
+    line-height: 150%;
 }
 
 #CommentContent{
@@ -11,4 +18,6 @@ div.desc{
     font-size: 14pt !important;
     line-height: 130%;
 }
+
+
 }
