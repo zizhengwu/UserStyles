@@ -1,0 +1,25 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("about:reader?") {
+
+ #moz-reader-content {
+   text-align: justify;
+ }
+ body.sans-serif{
+   font-family: "Avenir", "PingFang SC";
+ }
+ body.serif{
+   font-family: "Bookerly", "STSong";
+ }
+ body.light {
+   color: #1a2030;
+   background-color: #f9f6f0;
+ }
+ body.dark {
+ 
+ }
+ body.sepia {
+ 
+ }
+
+}
