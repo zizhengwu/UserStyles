@@ -4,16 +4,16 @@
 
  #moz-reader-content {
    text-align: justify;
+   font-size: xx-large !important;;
  }
  body.sans-serif{
-   font-family: "Avenir", "PingFang SC";
+   font-family: "Avenir", "PingFang SC", "Microsoft Yahei";
  }
  body.serif{
-   font-family: "Bookerly", "STSong";
+   font-family: "Crimson", "FZShuSong-Z01S";
  }
  body.light {
-   color: #1a2030;
-   background-color: #f9f6f0;
+
  }
  body.dark {
  

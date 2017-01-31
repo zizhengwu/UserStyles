@@ -1,11 +1,13 @@
 @-moz-document domain("inoreader.com") {
 
 body {
-    font-family: 'bookerly', 'Microsoft YaHei' !important;
-
+    font-family: 'Crimson', 'Microsoft YaHei' !important;
+    
   }
 
 .article_content {
-    font-family: 'bookerly', 'Microsoft YaHei' !important;
+    font-family: 'Crimson', 'FZShuSong-Z01' !important;
+    font-size: 20pt !important;
+    max-width: 800px !important;
 }
 }

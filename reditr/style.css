@@ -2,19 +2,19 @@
 div.desc{
     max-width: 800px !important;
     font-size: 19pt !important;
-    font-family: 'bookerly', 'Microsoft YaHei' !important;
+    font-family: 'Crimson', 'Microsoft YaHei' !important;
     line-height: 150%;
 }
 
 div.md{
     max-width: 800px !important;
     font-size: 19pt !important;
-    font-family: 'bookerly', 'Microsoft YaHei' !important;
+    font-family: 'Crimson', 'Microsoft YaHei' !important;
     line-height: 150%;
 }
 
 #CommentContent{
-    font-family: 'bookerly', 'Microsoft YaHei' !important;
+    font-family: 'Crimson', 'Microsoft YaHei' !important;
     font-size: 14pt !important;
     line-height: 130%;
 }
