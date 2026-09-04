@@ -5,147 +5,146 @@
 @description    Compact mobile reading with a manually toggled Feeds sidebar.
 @author         zizheng
 ==/UserStyle== */
-
 @-moz-document domain("inoreader.com") {
-  /* Keep the article title on one line and clip it at the screen edge. */
-  .article_title_wrapper,
-  .article_title_wrapper > a,
-  .article_header_title {
-    min-width: 0 !important;
-    max-width: 100% !important;
-  }
+    /* Keep the article title on one line and clip it at the screen edge. */
+    .article_title_wrapper,
+    .article_title_wrapper > a,
+    .article_header_title {
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
 
-  .article_header_title {
-    display: block !important;
-    white-space: nowrap !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-    font-weight: normal !important;
-    font-size: 1.4em !important;
-    line-height: 1.8 !important;
-    padding-inline-end: 0.2em !important;
-  }
+    .article_header_title {
+        display: block !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
+        font-weight: normal !important;
+        font-size: 1.4em !important;
+        line-height: 1.8 !important;
+        padding-inline-end: 0.2em !important;
+    }
 
-  /* Allow the top toolbar and search field to shrink. */
-  #header_pane,
-  .heading-wrapper,
-  .heading-feeds,
-  #header-controls,
-  #header-right-controls,
-  .nav-toolbar {
-    min-width: 0 !important;
-    max-width: 100% !important;
-  }
+    /* Allow the top toolbar and search field to shrink. */
+    #header_pane,
+    .heading-wrapper,
+    .heading-feeds,
+    #header-controls,
+    #header-right-controls,
+    .nav-toolbar {
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
 
-  /* Prevent toolbar wrapping/scrolling while preserving functional dropdowns. */
-  .heading-feeds {
-    overflow: hidden !important;
-  }
+    /* Prevent toolbar wrapping/scrolling while preserving functional dropdowns. */
+    .heading-feeds {
+        overflow: hidden !important;
+    }
 
-  #header_pane .heading-feeds:has(.dropdown > .dropdown-menu.show) {
-    overflow: visible !important;
-  }
+    #header_pane .heading-feeds:has(.dropdown > .dropdown-menu.show) {
+        overflow: visible !important;
+    }
 
-  .search-input-wrapper {
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-  }
+    .search-input-wrapper {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+    }
 
-  .search-header,
-  #article-inline-search {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-  }
+    .search-header,
+    #article-inline-search {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
 
-  .article_content {
-    font-family: "Bookerly", "FZPingXianYaSong-R-GBK",
-      -apple-system, BlinkMacSystemFont, sans-serif !important;
-    max-width: 500px;
-    font-size: 1.2em !important;
-  }
+    .article_content {
+        font-family: "Bookerly", "FZPingXianYaSong-R-GBK",
+        -apple-system, BlinkMacSystemFont, sans-serif !important;
+        max-width: 500px;
+        font-size: 1.2em !important;
+    }
 
-  .article_content img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
+    .article_content img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
 
-  .article_full_contents .article_title,
-  .article_full_contents .article_title_link {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    white-space: nowrap !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-  }
+    .article_full_contents .article_title,
+    .article_full_contents .article_title_link {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
+    }
 
-  .article_full_contents .article_title_link wbr {
-    display: none !important;
-  }
+    .article_full_contents .article_title_link wbr {
+        display: none !important;
+    }
 
-  #reader_pane {
-    overflow-x: hidden !important;
-  }
+    #reader_pane {
+        overflow-x: hidden !important;
+    }
 
-  /*
+    /*
    * Inoreader normally reveals an unpinned tree pane whenever #side-nav is
    * hovered. Keep the pane in its fully hidden position instead. Clicking the
    * existing control still toggles tree_pane_docked, so it becomes the sole
    * way to open or close the pane.
    */
-  body.tree_pane_docked:not(.active-tab-preferences) #side-nav:hover #tree_pane {
-    left: calc(0px - var(--tabs-width) - var(--sidebar-width)) !important;
-  }
+    body.tree_pane_docked:not(.active-tab-preferences) #side-nav:hover #tree_pane {
+        left: calc(0px - var(--tabs-width) - var(--sidebar-width)) !important;
+    }
 
-  /* Collapse the navigation rail with the tree pane, not just the tree pane. */
-  body.tree_pane_docked:not(.active-tab-preferences) {
-    padding-left: 0 !important;
-  }
+    /* Collapse the navigation rail with the tree pane, not just the tree pane. */
+    body.tree_pane_docked:not(.active-tab-preferences) {
+        padding-left: 0 !important;
+    }
 
-  body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) #tabs_pane {
-    width: 0 !important;
-    overflow: visible !important;
-  }
+    body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) #tabs_pane {
+        width: 0 !important;
+        overflow: visible !important;
+    }
 
-  body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) #tabs_pane > ul:not(#bottom_tabs),
-  body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) #bottom_tabs > :not(.tree-pane-dock-toggle) {
-    display: none !important;
-  }
+    body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) #tabs_pane > ul:not(#bottom_tabs),
+    body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) #bottom_tabs > :not(.tree-pane-dock-toggle) {
+        display: none !important;
+    }
 
-  /*
+    /*
    * Stylus cannot reparent DOM nodes, so visually place Inoreader's existing
    * collapse control at the leading edge of .heading-wrapper. The two left
    * positions follow the header when the sidebar changes between its open and
    * closed layouts.
    */
-  body:not(.mobile):not(.active-tab-preferences) .tree-pane-dock-toggle {
-    position: fixed !important;
-    top: 5px !important;
-    left: calc(var(--tabs-width) + var(--sidebar-width) + 8px) !important;
-    z-index: 100 !important;
-    width: 40px !important;
-    height: 40px !important;
-    margin: 0 !important;
-    list-style: none !important;
-  }
+    body:not(.mobile):not(.active-tab-preferences) .tree-pane-dock-toggle {
+        position: fixed !important;
+        top: 5px !important;
+        left: calc(var(--tabs-width) + var(--sidebar-width) + 8px) !important;
+        z-index: 100 !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 !important;
+        list-style: none !important;
+    }
 
-  body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) .tree-pane-dock-toggle {
-    left: 8px !important;
-  }
+    body:not(.mobile).tree_pane_docked:not(.active-tab-preferences) .tree-pane-dock-toggle {
+        left: 8px !important;
+    }
 
-  body:not(.mobile):not(.active-tab-preferences) .tree-pane-dock-toggle > .toggle_sidebar_btn {
-    width: 40px !important;
-    height: 40px !important;
-  }
+    body:not(.mobile):not(.active-tab-preferences) .tree-pane-dock-toggle > .toggle_sidebar_btn {
+        width: 40px !important;
+        height: 40px !important;
+    }
 
-  body:not(.mobile):not(.active-tab-preferences) .toggle_sidebar_btn .icon-arrow_collapse {
-    background-color: transparent !important;
-  }
+    body:not(.mobile):not(.active-tab-preferences) .toggle_sidebar_btn .icon-arrow_collapse {
+        background-color: transparent !important;
+    }
 
-  /* Reserve the control's space so it never overlaps the heading text. */
-  body:not(.mobile):not(.active-tab-preferences) .heading-wrapper {
-    padding-left: 64px !important;
-  }
+    /* Reserve the control's space so it never overlaps the heading text. */
+    body:not(.mobile):not(.active-tab-preferences) .heading-wrapper {
+        padding-left: 64px !important;
+    }
 }
